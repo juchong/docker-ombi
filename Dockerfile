@@ -15,7 +15,8 @@ RUN \
  apt-get install -y \
  python3 \
  python3-pip \
- git 
+ git \ 
+ python-is-python3
 
 RUN \
  apt-get update && \
