@@ -13,8 +13,13 @@ ENV HOME="/config"
 RUN \
  apt-get update && \
  apt-get install -y \
-	python3 \
-	pip3 \
+ python3 \
+ python3-pip \
+ git 
+
+RUN \
+ apt-get update && \
+ apt-get install -y \
 	libicu60 \
 	libssl1.0 && \
  echo "**** install ombi ****" && \
